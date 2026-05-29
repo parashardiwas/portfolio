@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diwas Parashar | AI & Data Analytics Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Professional portfolio of Diwas Parashar, pursuing M.Sc. in Artificial Intelligence & Data Analytics. Specializing in Machine Learning, Deep Learning, and Data Analysis.">
+  <meta name="keywords" content="Diwas Parashar, Artificial Intelligence, Data Analytics, Machine Learning, Deep Learning, Python, Amity University, BCA, Bharati Vidyapeeth, Portfolio">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Ambient Moving Mesh Gradients Background -->
+  <div class="mesh-gradient-bg">
+    <div class="mesh-blob mesh-blob-1"></div>
+    <div class="mesh-blob mesh-blob-2"></div>
+    <div class="mesh-blob mesh-blob-3"></div>
+  </div>
+
+  <!-- Futuristic Background Canvas (Neural Network Simulation) -->
+  <canvas id="neural-canvas"></canvas>
+
+  <div class="app-container">
+    
+    <!-- Header / Navigation -->
+    <header id="navbar">
+      <div class="container">
+        <a href="#hero" class="logo" id="nav-logo">
+          DIWAS<span class="logo-accent">//</span>ANALYTICS
+        </a>
+        <nav id="nav-menu">
+          <ul>
+            <li><a href="#hero" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#resume-hub" class="nav-link">Resume</a></li>
+            <li><a href="#timeline" class="nav-link">Journey</a></li>
+            <li><a href="#ai-assistant" class="nav-link">DiwasAI</a></li>
+            <li><a href="#contact" class="nav-link">Connect</a></li>
+          </ul>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <span class="hero-tagline">Diwas Parashar // Portfolio</span>
+            <h1 class="hero-title">Engineering the <br><span class="highlight-cyan">Next Generation</span> of AI.</h1>
+            <div class="hero-subtitle">
+              <span>Pursuing </span>
+              <span id="typewriter-text" class="highlight-emerald"></span>
+              <span class="typing-cursor"></span>
+            </div>
+            <p class="hero-desc">
+              M.Sc. Artificial Intelligence & Data Analytics student at Amity University, Noida. Focused on developing end-to-end Machine Learning pipelines, deep sequence classifiers, and predictive time-series models.
+            </p>
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary" id="btn-explore-projects">Explore Projects <i data-lucide="arrow-right" style="margin-left: 0.5rem; width: 18px; height: 18px;"></i></a>
+              <a href="#contact" class="btn btn-secondary" id="btn-get-in-touch">Get In Touch</a>
+            </div>
+          </div>
+          
+          <div class="hero-visual">
+            <div class="terminal-dashboard-card">
+              <div class="card-header">
+                <div class="card-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <div class="card-title">diwas_pipeline_monitor.sh</div>
+              </div>
+              <div class="card-content">
+                <div class="pipeline-status">
+                  <span class="status-indicator active"></span>
+                  <span class="status-text">TRAINING MODEL [DIWAS-GPT-v1]</span>
+                </div>
+                <div class="terminal-output-lines">
+                  <p class="console-line">&gt; epoch 15/50: loss=0.104 acc=91.2%</p>
+                  <p class="console-line">&gt; epoch 30/50: loss=0.038 acc=96.8%</p>
+                  <p class="console-line">&gt; epoch 45/50: loss=0.015 acc=98.4%</p>
+                  <p class="console-line highlight-green">&gt; process finished with code 0 (success)</p>
+                </div>
+                <div class="metric-container">
+                  <div class="metric-row">
+                    <span class="metric-label">Global F1-Score:</span>
+                    <span class="metric-val">98.42%</span>
+                  </div>
+                  <div class="progress-track">
+                    <div class="progress-fill" style="width: 98.42%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title reveal-item">About Me</h2>
+        
+        <div class="about-grid">
+          <div class="about-img-container reveal-item delay-1">
+            <div class="about-card-graphic" id="about-card">
+              <div style="font-family: var(--font-mono); color: var(--accent-cyan); margin-bottom: 1.5rem; font-size: 0.9rem;">
+                &gt; cat diwas_profile.json
+              </div>
+              <div style="font-family: var(--font-mono); font-size: 0.88rem; line-height: 1.8; color: var(--text-secondary);">
+                {<br>
+                &nbsp;&nbsp;"name": "Diwas Parashar",<br>
+                &nbsp;&nbsp;"location": "Noida, India",<br>
+                &nbsp;&nbsp;"education": "M.Sc. AI & Data Analytics",<br>
+                &nbsp;&nbsp;"university": "Amity University, Noida",<br>
+                &nbsp;&nbsp;"undergrad": "BCA, Bharati Vidyapeeth",<br>
+                &nbsp;&nbsp;"focus": ["Machine Learning", "Deep Learning", "Time-Series ML"],<br>
+                &nbsp;&nbsp;"status": "Seeking summer internships & full-time roles"<br>
+                }
+              </div>
+              
+              <div class="about-stat-row">
+                <div class="stat-box">
+                  <div class="stat-num" id="stat-projects">5+</div>
+                  <div class="stat-label">Core ML Projects</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-num" id="stat-accuracy">89%</div>
+                  <div class="stat-label">Max ROC-AUC</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-info reveal-item delay-2">
+            <h3>Bridging Algorithmic Logic & Data Insights</h3>
+            <p class="about-desc">
+              I am an M.Sc. student specializing in Artificial Intelligence and Data Analytics at Amity University. With a robust undergraduate foundation in Computer Applications from Bharati Vidyapeeth University, Pune, I specialize in constructing predictive machine learning frameworks, tuning sequence classification networks, and analyzing structured business data.
+            </p>
+            <p class="about-desc">
+              My engineering approach centers on modular programming design in Python, utilizing mathematical concepts for regression/classification, feature extraction, and performance evaluation. I am highly motivated to implement interpretable AI models that automate operational intelligence and support predictive decision systems.
+            </p>
+            <ul class="about-bullets">
+              <li><i data-lucide="check-circle-2"></i> ML Pipelines & Evaluation</li>
+              <li><i data-lucide="check-circle-2"></i> Time-Series Forecasting</li>
+              <li><i data-lucide="check-circle-2"></i> Deep Sequence Modeling</li>
+              <li><i data-lucide="check-circle-2"></i> Explainable AI (SHAP)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title reveal-item">Technical Expertise</h2>
+        
+        <div class="skills-grid">
+          <!-- Machine Learning & AI -->
+          <div class="skills-category ai reveal-item delay-1" id="skills-ai-card">
+            <h3><i data-lucide="brain"></i> Machine & Deep Learning</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Python Programming</span>
+                  <span class="skill-percent">95%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="95%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Feature Engineering & Evaluation</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">ML Classification & Regression</span>
+                  <span class="skill-percent">88%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="88%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Deep Learning (LSTMs, TensorFlow)</span>
+                  <span class="skill-percent">82%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="82%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Data Analytics -->
+          <div class="skills-category analytics reveal-item delay-2" id="skills-analytics-card">
+            <h3><i data-lucide="bar-chart-3"></i> Data & Analytics</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Pandas, NumPy & Wrangling</span>
+                  <span class="skill-percent">92%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="92%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">SQL Database & Schema Design</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Exploratory Data Analysis (EDA)</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Data Visualizations & Reports</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Engineering Tools -->
+          <div class="skills-category tools reveal-item delay-3" id="skills-tools-card">
+            <h3><i data-lucide="terminal"></i> Tools & Core Concepts</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Git & Version Control</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">APIs & Service Connections</span>
+                  <span class="skill-percent">78%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="78%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Firebase Backend Integration</span>
+                  <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="75%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Cloud Fundamentals & LaTeX</span>
+                  <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Gallery Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="projects-header reveal-item">
+          <h2 class="section-title" style="margin-bottom: 0;">Technical Projects</h2>
+          
+          <div class="project-filters">
+            <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+            <button class="filter-btn" data-filter="ai-ml" id="filter-ai-ml">AI & ML</button>
+            <button class="filter-btn" data-filter="analytics" id="filter-analytics">Data Analytics</button>
+          </div>
+        </div>
+        
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project 1: AI/ML -->
+          <div class="project-card reveal-item delay-1" data-category="ai-ml">
+            <div class="project-visual">
+              <div class="project-glow-graphic"></div>
+              <i data-lucide="activity" class="project-visual-icon"></i>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Scikit-learn</span>
+                <span class="project-tag">Supervised ML</span>
+              </div>
+              <h3 class="project-title">Parkinson's Disease Severity Analysis</h3>
+              <p class="project-desc">
+                Designed an end-to-end ML pipeline using 200+ biomedical voice samples to predict Parkinson's disease presence and severity. Engineered key features and compared multiple models (Logistic Regression, Random Forest, SVM) via cross-validation, successfully optimizing prediction accuracy from 78% to 86%.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/parashardiwas" target="_blank" class="project-link"><i data-lucide="github"></i> Repository</a>
+                <a href="#" class="project-link"><i data-lucide="file-text"></i> Evaluation metrics (RMSE: 0.18)</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 2: AI/ML (Explainability Churn) -->
+          <div class="project-card reveal-item delay-2" data-category="ai-ml">
+            <div class="project-visual">
+              <div class="project-glow-graphic"></div>
+              <i data-lucide="users" class="project-visual-icon"></i>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">XGBoost</span>
+                <span class="project-tag">SHAP</span>
+                <span class="project-tag">SMOTE</span>
+              </div>
+              <h3 class="project-title">Customer Churn Prediction with Explainability</h3>
+              <p class="project-desc">
+                Built an interpretable churn prediction model on a dataset of 7,000+ customers. Addressed class imbalance using SMOTE and achieved an ROC-AUC score of 0.89. Utilized SHAP values to identify key churn drivers and optimized decision thresholds to balance precision and recall.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/parashardiwas" target="_blank" class="project-link"><i data-lucide="github"></i> Repository</a>
+                <a href="#" class="project-link"><i data-lucide="eye"></i> Explainability Card</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 3: Analytics / Time-Series ML -->
+          <div class="project-card reveal-item delay-3" data-category="analytics">
+            <div class="project-visual">
+              <div class="project-glow-graphic"></div>
+              <i data-lucide="settings-2" class="project-visual-icon"></i>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">Time-Series ML</span>
+                <span class="project-tag">Anomaly Detection</span>
+                <span class="project-tag">Rolling Windows</span>
+              </div>
+              <h3 class="project-title">AI-Based Predictive Maintenance System</h3>
+              <p class="project-desc">
+                Developed a time-series predictive model using simulated sensor data (10,000+ records) to forecast smart manufacturing equipment failures. Extracted rolling window features and trend lines, achieving 84% anomaly prediction accuracy and reducing downtime by 25%.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/parashardiwas" target="_blank" class="project-link"><i data-lucide="github"></i> Repository</a>
+                <a href="#" class="project-link"><i data-lucide="trending-up"></i> Diagnostics</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: AI/ML (Deep Sequence Classify) -->
+          <div class="project-card reveal-item delay-1" data-category="ai-ml">
+            <div class="project-visual">
+              <div class="project-glow-graphic"></div>
+              <i data-lucide="binary" class="project-visual-icon"></i>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">TensorFlow</span>
+                <span class="project-tag">PyTorch</span>
+                <span class="project-tag">LSTM Networks</span>
+              </div>
+              <h3 class="project-title">Deep Learning Text Classification</h3>
+              <p class="project-desc">
+                Constructed an LSTM-based deep classifier trained on 20,000+ text samples to capture long-term sequential dependencies. Implemented custom tokenization, padding, and embedding layer architectures, achieving an 88% classification accuracy (a 10% improvement over baselines).
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/parashardiwas" target="_blank" class="project-link"><i data-lucide="github"></i> Repository</a>
+                <a href="#" class="project-link"><i data-lucide="cpu"></i> Model Card</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Analytics / Research -->
+          <div class="project-card reveal-item delay-2" data-category="analytics">
+            <div class="project-visual">
+              <div class="project-glow-graphic"></div>
+              <i data-lucide="file-search" class="project-visual-icon"></i>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">NLP Research</span>
+                <span class="project-tag">Sarcasm Detection</span>
+                <span class="project-tag">Literature Review</span>
+              </div>
+              <h3 class="project-title">Decade Review of Sarcasm Detection (2015-2025)</h3>
+              <p class="project-desc">
+                Conducted a systematic literature review analyzing 50+ papers spanning traditional ML, deep learning, and transformer architectures. Developed a detailed taxonomy based on contextual feature engineering and identified critical research gaps in multilingual and cross-domain sarcasm detection.
+              </p>
+              <div class="project-links">
+                <a href="#" class="project-link"><i data-lucide="book-open"></i> Full Review Report</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Hub Section -->
+    <section id="resume-hub" class="section resume-section reveal-item">
+      <div class="container">
+        <div class="resume-card">
+          <div class="resume-left">
+            <h3>Curriculum Vitae</h3>
+            <p>
+              Review my full academic history, analytical background, and co-curricular achievements. You can download the official resume PDF directly or preview it instantly inside your browser.
+            </p>
+            <div class="resume-features-grid">
+              <div class="resume-feature-item">
+                <i data-lucide="check-circle-2"></i> M.Sc. AI & Data Analytics (Amity)
+              </div>
+              <div class="resume-feature-item">
+                <i data-lucide="check-circle-2"></i> 4+ Core ML/DL Projects
+              </div>
+              <div class="resume-feature-item">
+                <i data-lucide="check-circle-2"></i> Systematic NLP Research Review
+              </div>
+              <div class="resume-feature-item">
+                <i data-lucide="check-circle-2"></i> NCC & Leadership Experience
+              </div>
+            </div>
+          </div>
+          
+          <div class="resume-right">
+            <div class="resume-badge-icon">
+              <i data-lucide="file-text"></i>
+            </div>
+            <div class="resume-cta-group">
+              <a href="Diwas_resume.pdf" download class="btn btn-primary" id="btn-download-pdf">
+                Download Resume <i data-lucide="download" style="margin-left: 0.5rem; width: 16px; height: 16px;"></i>
+              </a>
+              <a href="Diwas_resume.pdf" target="_blank" class="btn btn-secondary" id="btn-view-pdf">
+                Open in Browser <i data-lucide="external-link" style="margin-left: 0.5rem; width: 16px; height: 16px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Timeline Section -->
+    <section id="timeline" class="section">
+      <div class="container">
+        <h2 class="section-title reveal-item">Academic Journey</h2>
+        
+        <div class="timeline-container">
+          <!-- Master's Degree -->
+          <div class="timeline-item reveal-item delay-1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">August 2025 - Present</div>
+              <h3>M.Sc. in Artificial Intelligence & Data Analytics</h3>
+              <div class="timeline-institution">Amity University, Noida</div>
+              <p class="timeline-desc">
+                Advanced studies in neural optimization, machine learning modeling, structured data mining, predictive statistics, and big data configurations. Focusing on practical applications of deep learning pipelines.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Bachelor's Degree -->
+          <div class="timeline-item reveal-item delay-2">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">October 2021 - June 2024</div>
+              <h3>Bachelor's in Computer Applications (BCA)</h3>
+              <div class="timeline-institution">Bharati Vidyapeeth University, Pune</div>
+              <p class="timeline-desc">
+                Graduated with a CGPA of 6.9. Constructed strong core foundations in computer applications, programming paradigms (Java, Python), database management systems (SQL), and algorithm designs.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Leadership timeline item -->
+          <div class="timeline-item reveal-item delay-3">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">Co-Curricular Honors & Leadership</div>
+              <h3>Society Operations & Strategic Directives</h3>
+              <div class="timeline-institution">Bharati Vidyapeeth & TAFS MUN</div>
+              <p class="timeline-desc">
+                - **President**, Music Society BVP Pune: Led performer divisions and directed major events.<br>
+                - **Secretary General / Co-Secretary General**, TAFS Model United Nations (2019-2020): Led event coordination, directed logistics, and handled delegate operations.<br>
+                - **NCC Air Wing 'C' Certificate** Holder.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Recruiter Assistant Section -->
+    <section id="ai-assistant" class="section ai-section">
+      <div class="container">
+        <div class="ai-assistant-grid">
+          <div class="ai-intro reveal-item">
+            <h3>Interact With DiwasAI Chatbot</h3>
+            <p>
+              To demonstrate some AI design principles in a fun way, I have built a simulated neural assistant. Recruiters can click any of the programmed terminal queries on the right to receive immediate answers regarding my training, projects, or goals.
+            </p>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              <i data-lucide="info" style="display: inline-block; vertical-align: middle; width: 16px; height: 16px; margin-right: 0.25rem;"></i>
+              Responses are streamed directly in standard monospace console formatting.
+            </p>
+          </div>
+          
+          <div class="ai-interactive-window reveal-item delay-1">
+            <div class="terminal-window">
+              <div class="terminal-header">
+                <div class="terminal-buttons">
+                  <span class="t-btn t-close"></span>
+                  <span class="t-btn t-min"></span>
+                  <span class="t-btn t-max"></span>
+                </div>
+                <div class="terminal-title">diwas_assistant_v1.0.sh</div>
+                <div class="terminal-status">
+                  <span class="status-blink"></span>
+                  ONLINE
+                </div>
+              </div>
+              
+              <div class="terminal-body" id="terminal-body">
+                <!-- Messages will be injected by JavaScript -->
+                <div class="chat-bubble system">
+                  &gt; INITIALIZING DIWAS.AI INTERACTIVE CONSOLE...<br>
+                  &gt; HELLO! I AM DIWAS'S AGENT. CLICK AN OPTION BELOW TO RETRIEVE PROFESSIONAL DATA STREAMS.
+                </div>
+              </div>
+              
+              <div class="terminal-options">
+                <button class="option-btn" data-question="skills" id="opt-skills">Skills & Stack</button>
+                <button class="option-btn" data-question="goals" id="opt-goals">Career Objectives</button>
+                <button class="option-btn" data-question="research" id="opt-research">Research & NLP</button>
+                <button class="option-btn" data-question="hire" id="opt-hire">Why Hire Diwas?</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Connect / Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title reveal-item">Let's Connect</h2>
+        
+        <div class="contact-grid">
+          <div class="contact-info reveal-item delay-1">
+            <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 1rem;">
+              I am open to discussions regarding summer internship positions, junior data analyst opportunities, or AI/ML collaborations. Reach out via email, social links, or submit a message through the dashboard.
+            </p>
+            
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="mail"></i></div>
+              <div class="contact-details">
+                <h4>Email Address</h4>
+                <p><a href="mailto:diwas.parashar@gmail.com" id="email-link">diwas.parashar@gmail.com</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="phone"></i></div>
+              <div class="contact-details">
+                <h4>Telephone Connection</h4>
+                <p><a href="tel:+919654039726">+91 9654039726</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+              <div class="contact-details">
+                <h4>Primary Location</h4>
+                <p>Noida, Uttar Pradesh, India</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="https://linkedin.com/in/diwas-parashar" target="_blank" class="social-icon" aria-label="LinkedIn" id="linkedin-icon"><i data-lucide="linkedin"></i></a>
+              <a href="https://github.com/parashardiwas" target="_blank" class="social-icon" aria-label="GitHub" id="github-icon"><i data-lucide="github"></i></a>
+              <a href="mailto:diwas.parashar@gmail.com" class="social-icon" aria-label="Mail" id="mail-icon"><i data-lucide="mail"></i></a>
+            </div>
+          </div>
+          
+          <div class="contact-form-container reveal-item delay-2">
+            <div class="contact-form-card">
+              <form id="portfolio-contact-form">
+                <div class="form-group-row">
+                  <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Jane Doe" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="jane@example.com" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" name="subject" class="form-control" placeholder="Recruitment Inquiry" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" class="form-control" placeholder="Hi Diwas, we reviewed your analytics portfolio..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit" id="btn-submit-message">Send Message <i data-lucide="send" style="margin-left: 0.5rem; width: 16px; height: 16px;"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-rights">
+          <span class="logo-symbol" style="width: 8px; height: 8px;"></span>
+          <span>© 2026 Diwas Parashar. All Rights Reserved.</span>
+        </div>
+        <div>
+          Designed for high-impact recruitment.
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- JavaScript Main Logics -->
+  <script src="script.js"></script>
+</body>
+</html>
