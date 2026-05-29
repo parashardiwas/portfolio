@@ -41,6 +41,7 @@
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#skills" class="nav-link">Skills</a></li>
             <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#ml-sandbox" class="nav-link">Sandbox</a></li>
             <li><a href="#resume-hub" class="nav-link">Resume</a></li>
             <li><a href="#timeline" class="nav-link">Journey</a></li>
             <li><a href="#ai-assistant" class="nav-link">DiwasAI</a></li>
@@ -171,142 +172,64 @@
       <div class="container">
         <h2 class="section-title reveal-item">Technical Expertise</h2>
         
-        <div class="skills-grid">
-          <!-- Machine Learning & AI -->
-          <div class="skills-category ai reveal-item delay-1" id="skills-ai-card">
-            <h3><i data-lucide="brain"></i> Machine & Deep Learning</h3>
-            <div class="skills-list">
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name">Python Programming</span>
-                  <span class="skill-percent">95%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="95%"></div>
-                </div>
-              </div>
+        <div class="skills-split-layout reveal-item delay-1">
+          <!-- Left Column: Interactive SVG Radar Chart -->
+          <div class="radar-chart-container">
+            <svg viewBox="0 0 200 200" class="radar-svg" id="radar-chart">
+              <!-- Radial Grid Circles -->
+              <circle cx="100" cy="100" r="30" class="radar-grid-circle"></circle>
+              <circle cx="100" cy="100" r="60" class="radar-grid-circle"></circle>
+              <circle cx="100" cy="100" r="85" class="radar-grid-circle"></circle>
               
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name">Feature Engineering & Evaluation</span>
-                  <span class="skill-percent">90%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="90%"></div>
-                </div>
-              </div>
+              <!-- Radial Axis Lines -->
+              <line x1="100" y1="100" x2="100" y2="10" class="radar-grid-line"></line>
+              <line x1="100" y1="100" x2="178" y2="55" class="radar-grid-line"></line>
+              <line x1="100" y1="100" x2="178" y2="145" class="radar-grid-line"></line>
+              <line x1="100" y1="100" x2="100" y2="190" class="radar-grid-line"></line>
+              <line x1="100" y1="100" x2="22" y2="145" class="radar-grid-line"></line>
+              <line x1="100" y1="100" x2="22" y2="55" class="radar-grid-line"></line>
 
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name">ML Classification & Regression</span>
-                  <span class="skill-percent">88%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="88%"></div>
-                </div>
-              </div>
+              <!-- Polygon representing scores -->
+              <!-- Axes values (out of 100):
+                   1. ML: 90  (100, 23)
+                   2. DL: 82  (164, 59)
+                   3. Analytics: 92 (171, 141)
+                   4. Database: 85 (100, 172)
+                   5. Engineering: 78 (38, 136)
+                   6. Math/Stats: 85 (34, 62)
+              -->
+              <polygon points="100,23 164,59 171,141 100,172 38,136 34,62" class="radar-area-polygon"></polygon>
 
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name">Deep Learning (LSTMs, TensorFlow)</span>
-                  <span class="skill-percent">82%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="82%"></div>
-                </div>
-              </div>
-            </div>
+              <!-- Node Points -->
+              <circle cx="100" cy="23" r="5" class="radar-point active" data-axis="ml" id="pt-ml"></circle>
+              <circle cx="164" cy="59" r="5" class="radar-point" data-axis="dl" id="pt-dl"></circle>
+              <circle cx="171" cy="141" r="5" class="radar-point" data-axis="analytics" id="pt-analytics"></circle>
+              <circle cx="100" cy="172" r="5" class="radar-point" data-axis="database" id="pt-database"></circle>
+              <circle cx="38" cy="136" r="5" class="radar-point" data-axis="engineering" id="pt-engineering"></circle>
+              <circle cx="34" cy="62" r="5" class="radar-point" data-axis="math" id="pt-math"></circle>
+
+              <!-- Axis Text Labels -->
+              <text x="100" y="-2" class="radar-axis-label active" data-axis="ml">MACHINE LEARNING</text>
+              <text x="194" y="52" class="radar-axis-label" data-axis="dl">DEEP LEARNING</text>
+              <text x="194" y="152" class="radar-axis-label" data-axis="analytics">DATA WRANGLING</text>
+              <text x="100" y="202" class="radar-axis-label" data-axis="database">DATABASES & SQL</text>
+              <text x="2" y="152" class="radar-axis-label" data-axis="engineering">DEV TOOLS</text>
+              <text x="6" y="52" class="radar-axis-label" data-axis="math">MATH & STATS</text>
+            </svg>
           </div>
-          
-          <!-- Data Analytics -->
-          <div class="skills-category analytics reveal-item delay-2" id="skills-analytics-card">
-            <h3><i data-lucide="bar-chart-3"></i> Data & Analytics</h3>
-            <div class="skills-list">
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name">Pandas, NumPy & Wrangling</span>
-                  <span class="skill-percent">92%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="92%"></div>
-                </div>
-              </div>
 
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name">SQL Database & Schema Design</span>
-                  <span class="skill-percent">85%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="85%"></div>
-                </div>
-              </div>
-
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name">Exploratory Data Analysis (EDA)</span>
-                  <span class="skill-percent">90%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="90%"></div>
-                </div>
-              </div>
-
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name">Data Visualizations & Reports</span>
-                  <span class="skill-percent">85%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="85%"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Engineering Tools -->
-          <div class="skills-category tools reveal-item delay-3" id="skills-tools-card">
-            <h3><i data-lucide="terminal"></i> Tools & Core Concepts</h3>
-            <div class="skills-list">
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name">Git & Version Control</span>
-                  <span class="skill-percent">85%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="85%"></div>
-                </div>
-              </div>
-
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name">APIs & Service Connections</span>
-                  <span class="skill-percent">78%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="78%"></div>
-                </div>
-              </div>
-
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name">Firebase Backend Integration</span>
-                  <span class="skill-percent">75%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="75%"></div>
-                </div>
-              </div>
-
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span class="skill-name">Cloud Fundamentals & LaTeX</span>
-                  <span class="skill-percent">70%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="70%"></div>
-                </div>
-              </div>
+          <!-- Right Column: Interactive Details Display Panel -->
+          <div class="radar-details-card" id="radar-details-card">
+            <h3><i data-lucide="brain" style="color: var(--accent-cyan);"></i> Machine Learning</h3>
+            <p class="radar-details-desc">
+              Strong focus on end-to-end ML architectures, statistical model selections, and optimization features. Specialized in supervised algorithms, cross-validation metrics, and predictive classification.
+            </p>
+            <div class="radar-tech-tags">
+              <span class="radar-tech-tag">Python</span>
+              <span class="radar-tech-tag">Scikit-Learn</span>
+              <span class="radar-tech-tag">Classification</span>
+              <span class="radar-tech-tag">Regression</span>
+              <span class="radar-tech-tag">Feature Selection</span>
             </div>
           </div>
         </div>
@@ -373,7 +296,7 @@
             </div>
           </div>
           
-          <!-- Project 3: Analytics / Time-Series ML -->
+          <!-- Project 3: Analytics / Time-Series ML (Interactive System Architecture Flowchart!) -->
           <div class="project-card reveal-item delay-3" data-category="analytics">
             <div class="project-visual">
               <div class="project-glow-graphic"></div>
@@ -383,13 +306,30 @@
               <div class="project-tags">
                 <span class="project-tag">Time-Series ML</span>
                 <span class="project-tag">Anomaly Detection</span>
-                <span class="project-tag">Rolling Windows</span>
+                <span class="project-tag">Interactive Pipeline</span>
               </div>
               <h3 class="project-title">AI-Based Predictive Maintenance System</h3>
               <p class="project-desc">
-                Developed a time-series predictive model using simulated sensor data (10,000+ records) to forecast smart manufacturing equipment failures. Extracted rolling window features and trend lines, achieving 84% anomaly prediction accuracy and reducing downtime by 25%.
+                Developed a time-series predictive model using simulated sensor data to forecast manufacturing equipment failures, reducing downtime by 25%.
               </p>
-              <div class="project-links">
+              
+              <!-- Clickable Pipeline Flowchart widget -->
+              <div class="pipeline-flow">
+                <div class="pipeline-step active" data-step="sensor" id="step-sensor" title="Sensors Feed"><i data-lucide="radio"></i></div>
+                <div class="pipeline-step" data-step="etl" id="step-etl" title="ETL & Normalize"><i data-lucide="database"></i></div>
+                <div class="pipeline-step" data-step="features" id="step-features" title="Window Engineering"><i data-lucide="binary"></i></div>
+                <div class="pipeline-step" data-step="model" id="step-model" title="Time-Series Anomaly"><i data-lucide="cpu"></i></div>
+                <div class="pipeline-step" data-step="alerts" id="step-alerts" title="Dashboard Alerts"><i data-lucide="bell"></i></div>
+              </div>
+              <div class="pipeline-details" id="pm-pipeline-details">
+                <h4>Sensors Feed Capture [10,000+ records]</h4>
+                <p>Ingesting real-time temperature, load, and rotational velocity sensor logs representing high-frequency industrial manufacturing stats.</p>
+                <div class="pipeline-code-drawer">
+                  df_sensors = pd.read_csv("manufacturing_feed.csv")
+                </div>
+              </div>
+
+              <div class="project-links" style="margin-top: 1.5rem;">
                 <a href="https://github.com/parashardiwas" target="_blank" class="project-link"><i data-lucide="github"></i> Repository</a>
                 <a href="#" class="project-link"><i data-lucide="trending-up"></i> Diagnostics</a>
               </div>
@@ -419,7 +359,7 @@
             </div>
           </div>
 
-          <!-- Project 5: Analytics / Research -->
+          <!-- Project 5: Analytics / Research (Interactive Sarcasm parsing box!) -->
           <div class="project-card reveal-item delay-2" data-category="analytics">
             <div class="project-visual">
               <div class="project-glow-graphic"></div>
@@ -428,15 +368,162 @@
             <div class="project-body">
               <div class="project-tags">
                 <span class="project-tag">NLP Research</span>
-                <span class="project-tag">Sarcasm Detection</span>
+                <span class="project-tag">Interactive Sandbox</span>
                 <span class="project-tag">Literature Review</span>
               </div>
               <h3 class="project-title">Decade Review of Sarcasm Detection (2015-2025)</h3>
               <p class="project-desc">
-                Conducted a systematic literature review analyzing 50+ papers spanning traditional ML, deep learning, and transformer architectures. Developed a detailed taxonomy based on contextual feature engineering and identified critical research gaps in multilingual and cross-domain sarcasm detection.
+                Conducted a systematic literature review analyzing 50+ papers spanning ML, deep learning, and transformer architectures.
               </p>
-              <div class="project-links">
+              
+              <!-- Sarcasm input sandbox -->
+              <div class="sarcasm-input-wrapper">
+                <input type="text" id="sarcasm-text-input" class="sarcasm-console-input" placeholder="Type a sarcastic sentence to analyze...">
+                <div class="sarcasm-action-row">
+                  <button class="btn btn-secondary" style="padding: 0.4rem 0.95rem; font-size: 0.78rem; border-radius: 20px;" id="btn-detect-sarcasm">Run NLP Inference</button>
+                  <div class="sarcasm-output-badge" id="sarcasm-badge">Sarcasm Index: <span id="sarcasm-percentage">0%</span></div>
+                </div>
+                <div class="sarcasm-score-bar-wrapper" id="sarcasm-bar-wrapper">
+                  <div class="sarcasm-score-bar-fill" id="sarcasm-bar-fill"></div>
+                </div>
+              </div>
+
+              <div class="project-links" style="margin-top: 1.5rem;">
                 <a href="#" class="project-link"><i data-lucide="book-open"></i> Full Review Report</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ML Inference Sandbox Section -->
+    <section id="ml-sandbox" class="section sandbox-section reveal-item">
+      <div class="container">
+        <h2 class="section-title">ML Inference Sandbox</h2>
+        
+        <div class="sandbox-tabs">
+          <button class="sandbox-tab-btn active" data-target="panel-parkinsons" id="tab-parkinsons">Parkinson's Voice Diagnostics</button>
+          <button class="sandbox-tab-btn" data-target="panel-churn" id="tab-churn">Customer Churn SHAP Simulator</button>
+        </div>
+        
+        <!-- Panel 1: Parkinson's -->
+        <div class="sandbox-panel active" id="panel-parkinsons">
+          <div class="sandbox-grid">
+            <div class="sandbox-controls">
+              <div class="sandbox-slider-group">
+                <div class="sandbox-slider-header">
+                  <span class="sandbox-slider-label">Jitter (Frequency Variation)</span>
+                  <span class="sandbox-slider-val" id="val-jitter">1.2%</span>
+                </div>
+                <input type="range" class="sandbox-input-slider" id="slider-jitter" min="0" max="5" step="0.1" value="1.2">
+              </div>
+              
+              <div class="sandbox-slider-group">
+                <div class="sandbox-slider-header">
+                  <span class="sandbox-slider-label">Shimmer (Amplitude Shifting)</span>
+                  <span class="sandbox-slider-val" id="val-shimmer">4.5%</span>
+                </div>
+                <input type="range" class="sandbox-input-slider" id="slider-shimmer" min="0" max="15" step="0.1" value="4.5">
+              </div>
+
+              <div class="sandbox-slider-group">
+                <div class="sandbox-slider-header">
+                  <span class="sandbox-slider-label">HNR (Harmonics-to-Noise Ratio)</span>
+                  <span class="sandbox-slider-val" id="val-hnr">18.5 dB</span>
+                </div>
+                <input type="range" class="sandbox-input-slider" id="slider-hnr" min="5" max="30" step="0.5" value="18.5">
+              </div>
+            </div>
+            
+            <div class="sandbox-visuals">
+              <div class="gauge-circular-wrapper">
+                <svg class="gauge-svg">
+                  <!-- SVG Gradient -->
+                  <defs>
+                    <linearGradient id="gauge-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="var(--accent-cyan)" />
+                      <stop offset="100%" stop-color="#ff5f56" />
+                    </linearGradient>
+                  </defs>
+                  <circle class="gauge-bg-circle" cx="90" cy="90" r="80"></circle>
+                  <circle class="gauge-fill-circle" id="parkinsons-gauge-fill" cx="90" cy="90" r="80"></circle>
+                </svg>
+                <div class="gauge-readout">
+                  <span class="gauge-percent" id="parkinsons-prob">24%</span>
+                  <span class="gauge-label">Severity</span>
+                </div>
+              </div>
+              <div class="sandbox-status-alert active-safe" id="parkinsons-status">
+                DIAGNOSIS: HEALTHY VOICE SPECTRUM
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Panel 2: Churn SHAP -->
+        <div class="sandbox-panel" id="panel-churn">
+          <div class="sandbox-grid">
+            <div class="sandbox-controls">
+              <div class="sandbox-slider-group">
+                <div class="sandbox-slider-header">
+                  <span class="sandbox-slider-label">Tenure Duration (Months)</span>
+                  <span class="sandbox-slider-val" id="val-tenure">24 months</span>
+                </div>
+                <input type="range" class="sandbox-input-slider" id="slider-tenure" min="1" max="72" step="1" value="24">
+              </div>
+              
+              <div class="sandbox-slider-group">
+                <div class="sandbox-slider-header">
+                  <span class="sandbox-slider-label">Monthly Billing Rate ($)</span>
+                  <span class="sandbox-slider-val" id="val-billing">$65</span>
+                </div>
+                <input type="range" class="sandbox-input-slider" id="slider-billing" min="15" max="120" step="5" value="65">
+              </div>
+
+              <div class="sandbox-slider-group">
+                <div class="sandbox-slider-header">
+                  <span class="sandbox-slider-label">Contract Term</span>
+                  <span class="sandbox-slider-val" id="val-contract">Month-to-month</span>
+                </div>
+                <input type="range" class="sandbox-input-slider" id="slider-contract" min="0" max="2" step="1" value="0">
+              </div>
+            </div>
+            
+            <div class="sandbox-visuals">
+              <div class="shap-force-layout">
+                <div class="shap-force-item">
+                  <div class="shap-force-header">
+                    <span class="shap-label">Tenure (High tenure increases loyalty)</span>
+                    <span class="shap-val push-stay" id="shap-tenure-val">-0.42</span>
+                  </div>
+                  <div class="shap-bar-track">
+                    <div class="shap-bar-fill push-stay" id="shap-tenure-fill" style="width: 42%;"></div>
+                  </div>
+                </div>
+
+                <div class="shap-force-item">
+                  <div class="shap-force-header">
+                    <span class="shap-label">Monthly Rate (High rates drive churn)</span>
+                    <span class="shap-val push-churn" id="shap-billing-val">+0.15</span>
+                  </div>
+                  <div class="shap-bar-track">
+                    <div class="shap-bar-fill push-churn" id="shap-billing-fill" style="width: 15%;"></div>
+                  </div>
+                </div>
+
+                <div class="shap-force-item">
+                  <div class="shap-force-header">
+                    <span class="shap-label">Contract Term (Month-to-month drives churn)</span>
+                    <span class="shap-val push-churn" id="shap-contract-val">+0.38</span>
+                  </div>
+                  <div class="shap-bar-track">
+                    <div class="shap-bar-fill push-churn" id="shap-contract-fill" style="width: 38%;"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="sandbox-status-alert active-safe" id="churn-status" style="margin-top: 2rem;">
+                CHURN RISK: LOW (PROBABILITY: 34%)
               </div>
             </div>
           </div>
@@ -669,6 +756,14 @@
         </div>
       </div>
     </footer>
+
+    <!-- Floating Theme Switcher -->
+    <div class="theme-switch-wrapper">
+      <button class="theme-switch-btn" id="theme-switch-btn">
+        <i data-lucide="terminal"></i>
+        <span>Hacker Mode</span>
+      </button>
+    </div>
 
   </div>
 
